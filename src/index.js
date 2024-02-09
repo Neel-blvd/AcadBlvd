@@ -1,11 +1,11 @@
 const navBarElement = document.querySelector("#navBarid");
 const contactMeElement = document.querySelector("#contactid");
-const iconLinksElement = document.getElementById("iconLinksid");
+const iconLinksElement = document.querySelector("#iconLinksid");
 const aboutElement = document.querySelector("#aboutid");
 const htmlElement = document.querySelector("html");
 const bodyElement = document.querySelector("body");
 const aboutContentElement = document.querySelector("#aboutcontentid");
-const quizzesElement = document.querySelector("#quizzesid");
+const homeElement = document.querySelector("#homeid");
 const cardsElement = document.querySelector("#cardsid");
 
 const dropRightIconLinksList = function(){
@@ -15,8 +15,8 @@ const dropRightIconLinksList = function(){
         iconLinksElement.classList.add("hidden");
 }
 
-quizzesElement.addEventListener("click", (function(){
-    window.open("Quizzes.html", "_self");
+homeElement.addEventListener("click", (function(){
+    window.open("Home.html", "_self");
 }));
 
 aboutElement.addEventListener("click", function(){
@@ -24,6 +24,8 @@ aboutElement.addEventListener("click", function(){
 });
 
 contactMeElement.addEventListener("click", dropRightIconLinksList);
+
+
 
 
 

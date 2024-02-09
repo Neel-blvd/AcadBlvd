@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-sans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcadBlvd | About</title>
+    <title>AcadBlvd | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-zinc-900 w-screen h-screen overflow-x-hidden">
 
-    <!--NavBar-->
     
+    <!--NavBar-->
+
     <div id="navBarid" class="border-b border-orange-600 w-full h-16 text-white flex bg-zinc-900">
         <button id="homeid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold text-orange-600">
-            Home
-        </button>
-        
-        <button id="aboutid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold text-orange-600">
-            <div>About</div>
+            <div>Home</div>
             
             <!--Nav bar's selected element's Bottom Border-->
             <div class="w-4 border-2 rounded-md mx-auto mt-1">
             </div>
         </button>
         
+        <button id="aboutid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold text-orange-600">
+            About
+        </button>
+        
         <button id="contactid" class="w-32 py-1 rounded-lg hover:font-bold text-orange-600">
             Contact Me
         </button>
 
+        
         <!--IconLinksAnimation(In NavBar)-->
     
-        <div id="iconLinksid" class="w-96 h-16 py-1 rounded-3xl border-t-0 border-orange-600 
+        <div id="iconLinksid" class="w-96 h-16 py-1 rounded-3xl 
             flex justify-center items-center space-x-8 hidden">
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neelphadke13579@gmail.com" target="_blank">
                 <img src="/src/images/Gmail.png" 
                     class="w-7 h-7 cursor-pointer grayscale hover:filter-none">
-            </a>
+            </a>    
             <a href="https://www.linkedin.com/in/neel-phadke-b83638201/" target="_blank">
                 <img src="/src/images/Linkedin2.png" 
                     class="w-7 h-7 cursor-pointer grayscale hover:filter-none">
@@ -45,7 +49,7 @@
             </a>
             <a href="https://leetcode.com/Neel-blvd/" target="_blank">
                 <img src="/src/images/Leetcode.png" 
-                    class="w-7 h-7 cursor-pointer grayscale hover:filter-none">
+                    class="w-7 h-7 cursor-pointer grayscale contrast-200 hover:filter-none">
             </a>
             <a href="https://discord.com/" target="_blank">
                 <img src="/src/images/Discord2.png" 
@@ -64,10 +68,57 @@
     </div>
 
     
+    <!--Cards Content(Main Content)-->
+    
+    <div id="cardsid" class="h-fit bg-zinc-900">
+        <div class="h-fit flex justify-around">
+            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl py-20 rounded-3xl p-2">
+                <div>Engineering Mathematics-4</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">MAT_2226</div>
+            </div>
+            
+            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl py-20 rounded-3xl p-2">
+                <div>Formal Language and Automata Theory</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2254</div>
+            </div>
+            
+            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl py-20 rounded-3xl p-2">
+                <div>Design and Analysis of Algorithms</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2252</div>
+            </div>
+        </div>
+
+        <div class="h-fit flex justify-center space-x-48">
+            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl py-20 rounded-3xl p-2">
+                <div>Embedded Systems</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2253</div>
+            </div>
+            
+            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl py-20 rounded-3xl p-2">
+                <div>Database Systems</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+        </div>
+    </div>
 
     
+    <!--Cards Animation(What happens when a card is clicked on)-->
+
+    
+
         
    
     <script src="index.js"></script>
 </body>
+
 </html>
