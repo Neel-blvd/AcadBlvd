@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/AcadBlvd.png">
     <title>AcadBlvd | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-zinc-900 w-screen h-screen overflow-x-hidden">
 
-    
     <!--NavBar-->
 
     <div id="navBarid" class="border-b border-orange-600 w-full h-16 text-white flex bg-zinc-900">
-        <button id="homeid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold text-orange-600">
+        <a href="Home.html" class="h-full">
+            <img src="images/AcadBlvd.png" class="h-full">
+        </a>
+        <button id="homeid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold 
+            text-orange-600 text-lg">
             <div>Home</div>
             
             <!--Nav bar's selected element's Bottom Border-->
@@ -22,11 +26,13 @@
             </div>
         </button>
         
-        <button id="aboutid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold text-orange-600">
+        <button id="aboutid" class="w-32 py-1 rounded-lg hover:scale-105 hover:font-bold 
+        text-orange-600 text-lg">
             About
         </button>
         
-        <button id="contactid" class="w-32 py-1 rounded-lg hover:font-bold text-orange-600">
+        <button id="contactid" class="w-32 py-1 rounded-lg hover:font-bold text-orange-600
+        text-lg">
             Contact Me
         </button>
 
@@ -35,7 +41,8 @@
     
         <div id="iconLinksid" class="w-96 h-16 py-1 rounded-3xl 
             flex justify-center items-center space-x-8 hidden">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neelphadke13579@gmail.com" target="_blank">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neelphadke13579@gmail.com" 
+                target="_blank">
                 <img src="/src/images/Gmail.png" 
                     class="w-7 h-7 cursor-pointer grayscale hover:filter-none">
             </a>    
@@ -62,57 +69,850 @@
             <!--<div id="closeid" class="pt-1">
                 <img src="/src/images/Close.png" 
                     class="w-8 h-9 cursor-pointer grayscale hover:filter-none">
-            </div>
-            -->
+            </div>-->
         </div>
     </div>
+    <div id="jumpToParentid" class="fixed"> 
+        <div id="jumpToid" class="hover:text-white font-bold w-24 py-1 text-orange-600
+             hover:bg-orange-600 rounded-lg flex hover:cursor-pointer">
+            <div class="pl-2">Jump to</div>
+            <div class="pl-2 pt-1 hover:brightness-200">
+                <img src="images/white-arrow-down.png" class="w-4">
+            </div>
+        </div>
+
+        <div id="jumpToOptionsid" class="w-24 border border-orange-600 h-fit text-center 
+            rounded-lg text-orange-600 hidden">
+            <div class="h-14 hover:font-bold">
+                <a href="#cardsid1"><div>Physics</div>
+                <div>Cycle</div></a>
+            </div>
+            <div class="h-14 hover:font-bold"><a href="#cardsid2">Chemistry Cycle</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid3">Semester 3</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid4">Semester 4</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid5">Semester 5</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid6">Semester 6</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid7">Semester 7</a></div>
+            <div class="h-10 hover:font-bold"><a href="#cardsid8">Semester 8</a></div>
+        </div>
+    </div> 
 
     
-    <!--Cards Content(Main Content)-->
-    
-    <div id="cardsid" class="h-fit bg-zinc-900">
-        <div class="h-fit flex justify-around">
-            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
-            text-2xl py-20 rounded-3xl p-2">
-                <div>Engineering Mathematics-4</div>
+    <!--Cards Content-1-->
+
+    <div id="cardsid1" class="h-fit bg-zinc-900 mt-16">
+        <div class="text-orange-600 mx-auto text-center text-4xl w-fit h-fit 
+            border-b-2 pb-2 border-orange-600">
+            Physics Cycle
+        </div>
+        <div id="cardsid11" class="h-fit flex justify-around">
+            <div id="em1id" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Engineering</div>
+                <div> Mathematics-1</div>
                 <div class="w-8 border mx-auto mt-12"></div>
                 <div class="mt-2">MAT_2226</div>
             </div>
+            <div id="em1Optionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                    <div id="em1LeftArrowid" class="p-4 w-fit h-fit 
+                        grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/left-arrow.png" class="w-10">
+                    </div>
+                    <div class="text-orange-600 text-xl ml-3">
+                        Engineering Mathematics-1
+                    </div>
+                </div> 
+                <div class="flex h-14 justify-center space-x-6 mt-3">
+                    <div class="text-orange-600 text-lg">
+                        Documentation
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/document-512.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex h-14 justify-center space-x-6">
+                    <div class="text-orange-600 text-lg">
+                        Quiz
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/letter-q(1).png" class="w-10">
+                    </div>
+                </div>
+            </div>
             
-            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
-            text-2xl py-20 rounded-3xl p-2">
-                <div>Formal Language and Automata Theory</div>
+            <div id="engid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>English</div>
                 <div class="w-8 border mx-auto mt-12"></div>
                 <div class="mt-2">CSE_2254</div>
             </div>
+            <div id="engOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="engLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-lg text-center mr-2 mb-2">
+                        English
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
             
-            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
-            text-2xl py-20 rounded-3xl p-2">
-                <div>Design and Analysis of Algorithms</div>
+            <div id="beid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Basic Electronics</div>
                 <div class="w-8 border mx-auto mt-12"></div>
                 <div class="mt-2">CSE_2252</div>
             </div>
+            <div id="beOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="beLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mr-2 mb-2">
+                       Basic Electronics
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
         </div>
 
-        <div class="h-fit flex justify-center space-x-48">
-            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
-            text-2xl py-20 rounded-3xl p-2">
+        <div id="cardsid12" class="h-fit mt-14 flex justify-around">
+            <div id="phyid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Engineering Physics</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2253</div>
+            </div>
+            <div id="phyOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="phyLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Engineering Physics
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="mosid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Mechanics of Solids</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+            <div id="mosOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="mosLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Mechanics of Solids
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+
+           <div id="bmeid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Basic Mechanical Engineering</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+            <div id="bmeOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="bmeLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Basic Mechanical Engineering
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--Cards Content-2-->
+
+    <div id="cardsid2" class="h-fit bg-zinc-900 mt-32">
+        <div class="text-orange-600 mx-auto text-center text-4xl w-fit h-fit 
+            border-b-2 pb-2 border-orange-600">
+            Chemistry Cycle
+        </div>
+        <div id="cardsid21" class="h-fit flex justify-around">
+            <div id="em2id" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Engineering</div>
+                <div> Mathematics-2</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">MAT_2226</div>
+            </div>
+            <div id="em2Optionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                    <div id="em2LeftArrowid" class="p-4 w-fit h-fit 
+                        grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/left-arrow.png" class="w-10">
+                    </div>
+                    <div class="text-orange-600 text-xl ml-3">
+                        Engineering Mathematics-2
+                    </div>
+                </div> 
+                <div class="flex h-14 justify-center space-x-6 mt-3">
+                    <div class="text-orange-600 text-lg">
+                        Documentation
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/document-512.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex h-14 justify-center space-x-6">
+                    <div class="text-orange-600 text-lg">
+                        Quiz
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/letter-q(1).png" class="w-10">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="evsid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Environmental Sciences</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2254</div>
+            </div>
+            <div id="evsOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="evsLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-lg text-center mr-2 mb-2">
+                        Environmental Sciences
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="psucid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Problem Solving Using Computers</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2252</div>
+            </div>
+            <div id="psucOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="psucLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mr-2 mb-2">
+                       Problem Solving Using Computers
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div id="cardsid22" class="h-fit mt-14 flex justify-around">
+            <div id="betid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Basic Electronic Technology</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2253</div>
+            </div>
+            <div id="betOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="betLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Basic Electronic Technology
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="chemid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Engineering Chemistry</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+            <div id="chemOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="chemLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Engineering Chemistry
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+
+           <div id="bioid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Engineering Biology</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+            <div id="bioOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="bioLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Engineering Biology
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    
+    
+    
+    <!--Cards Content-3-->
+
+    <div id="cardsid3" class="h-fit bg-zinc-900 mt-32">
+        <div class="text-orange-600 mx-auto text-center text-4xl w-fit h-fit 
+            border-b-2 pb-2 border-orange-600">
+            Semester 3
+        </div>
+        <div id="cardsid31" class="h-fit flex justify-around">
+            <div id="em3id" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Engineering</div>
+                <div> Mathematics-3</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">MAT_2226</div>
+            </div>
+            <div id="em3Optionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                 <div class="flex">  
+                    <div id="em3LeftArrowid" class="p-4 w-fit h-fit 
+                        grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/left-arrow.png" class="w-10">
+                    </div>
+                    <div class="text-orange-600 text-xl ml-3">
+                        Engineering Mathematics-3
+                    </div>
+                </div> 
+                <div class="flex h-14 justify-center space-x-6 mt-3">
+                    <div class="text-orange-600 text-lg">
+                        Documentation
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/document-512.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex h-14 justify-center space-x-6">
+                    <div class="text-orange-600 text-lg">
+                        Quiz
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/letter-q(1).png" class="w-10">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="coaid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Computer Organization</div>
+                <div>and Architecture</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2254</div>
+            </div>
+            <div id="coaOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="coaLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-lg text-center mr-2 mb-2">
+                       Computer Organization and Architecture
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="dsid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Data Structures</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2252</div>
+            </div>
+            <div id="dsOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="dsLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mr-2 mb-2">
+                       Data Structures
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div id="cardsid32" class="h-fit mt-14 flex justify-center space-x-48">
+            <div id="dsdid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Digital System Design</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2253</div>
+            </div>
+            <div id="dsdOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="dsdLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Digital System Design
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="oopsid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
+                <div>Object-Oriented Programming Systems</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2251</div>
+            </div>
+            <div id="oopsOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="oopsLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Object-Oriented Programming Systems
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+
+    
+    <!--Cards Content-4 (Main Content)-->
+    
+    <div id="cardsid4" class="h-fit bg-zinc-900 mt-32 mb-16">
+        <div class="text-orange-600 mx-auto text-center text-4xl w-fit h-fit 
+            border-b-2 pb-2 border-orange-600">
+            Semester 4
+        </div>
+        <div id="cardsid41" class="h-fit flex justify-around">
+            <div id="em4id" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Engineering</div>
+                <div> Mathematics-4</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">MAT_2226</div>
+            </div>
+            <div id="em4Optionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                 <div class="flex">  
+                    <div id="em4LeftArrowid" class="p-4 w-fit h-fit 
+                        grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/left-arrow.png" class="w-10">
+                    </div>
+                    <div class="text-orange-600 text-xl ml-3">
+                        Engineering Mathematics-4
+                    </div>
+                </div> 
+                <div class="flex h-14 justify-center space-x-6 mt-3">
+                    <div class="text-orange-600 text-lg">
+                        Documentation
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/document-512.png" class="w-10">
+                    </div>
+                </div>
+                <div class="flex h-14 justify-center space-x-6">
+                    <div class="text-orange-600 text-lg">
+                        Quiz
+                    </div>
+                    <div class="grayscale hover:filter-none hover:cursor-pointer">
+                        <img src="images/letter-q(1).png" class="w-10">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="flatid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Formal Language</div>
+                <div>and Automata Theory</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2254</div>
+            </div>
+            <div id="flatOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="flatLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-lg text-center mr-2 mb-2">
+                       Formal Language and Automata Theory
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+            
+            <div id="daaid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl mt-12 rounded-3xl p-2">
+                <div>Design and Analysis</div>
+                <div> of Algorithms</div>
+                <div class="w-8 border mx-auto mt-12"></div>
+                <div class="mt-2">CSE_2252</div>
+            </div>
+            <div id="daaOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden mt-12">
+                <div class="flex">  
+                   <div id="daaLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-10">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mr-2 mb-2">
+                       Design and Analysis of Algorithms
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
+        </div>
+
+        <div id="cardsid42" class="h-fit mt-14 flex justify-center space-x-48">
+            <div id="esid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
                 <div>Embedded Systems</div>
                 <div class="w-8 border mx-auto mt-12"></div>
                 <div class="mt-2">CSE_2253</div>
             </div>
+            <div id="esOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="esLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Embedded Systems
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
             
-            <div class="w-64 h-64 hover:scale-105 cursor-pointer text-orange-600 text-center 
-            text-2xl py-20 rounded-3xl p-2">
+            <div id="dbsid" class="w-64 h-48 hover:scale-105 cursor-pointer text-orange-600 text-center 
+            text-2xl rounded-3xl p-2">
                 <div>Database Systems</div>
                 <div class="w-8 border mx-auto mt-12"></div>
                 <div class="mt-2">CSE_2251</div>
             </div>
+            <div id="dbsOptionsid" class="w-64 h-48 border border-orange-600 rounded-3xl hidden">
+                <div class="flex">  
+                   <div id="dbsLeftArrowid" class="p-4 w-fit h-fit 
+                       grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/left-arrow.png" class="w-7">
+                   </div>
+                   <div class="text-orange-600 text-xl text-center mt-3">
+                        Database Systems
+                   </div>
+               </div> 
+               <div class="flex h-14 justify-center space-x-6 mt-3">
+                   <div class="text-orange-600 text-lg">
+                       Documentation
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/document-512.png" class="w-10">
+                   </div>
+               </div>
+               <div class="flex h-14 justify-center space-x-6">
+                   <div class="text-orange-600 text-lg">
+                       Quiz
+                   </div>
+                   <div class="grayscale hover:filter-none hover:cursor-pointer">
+                       <img src="images/letter-q(1).png" class="w-10">
+                   </div>
+               </div>
+           </div>
         </div>
     </div>
 
     
-    <!--Cards Animation(What happens when a card is clicked on)-->
+    
+
+    
+    
+    
 
     
 
