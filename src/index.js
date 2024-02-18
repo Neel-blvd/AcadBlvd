@@ -3,7 +3,8 @@ const contactMeElement = document.querySelector("#contactid");
 const iconLinksElement = document.querySelector("#iconLinksid");
 const aboutElement = document.querySelector("#aboutid");
 const htmlElement = document.querySelector("html");
-const bodyElement = document.querySelector("body");
+const homeBodyElement = document.querySelector("#homeBodyElement");
+const aboutBodyElement = document.querySelector("#aboutBodyElement");
 const aboutContentElement = document.querySelector("#aboutcontentid");
 const homeElement = document.querySelector("#homeid");
 const cardsElement1 = document.querySelector("#cardsid1");
@@ -309,7 +310,7 @@ homeElement.addEventListener("click", (function(){
     window.open("Home.html", "_self");
 }));
 aboutElement.addEventListener("click", function(){
-    window.open("About.html", "_self");
+     window.open("About.html", "_self");
 });
 contactMeElement.addEventListener("click", dropRightIconLinksList);
 
@@ -387,6 +388,11 @@ window.addEventListener("scroll", function(){
     else
         jumpToParentElement.classList.remove("top-8");
 });
+
+
+    
+
+
 
 
 
